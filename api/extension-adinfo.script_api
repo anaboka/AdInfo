@@ -1,0 +1,28 @@
+- name: adinfo
+  type: table
+  desc: Provides functionality to get the advertising id and tracking status. Supported on iOS and Android.
+        [icon:ios] [icon:android]
+  members:
+
+#*****************************************************************************************************
+
+  - name: get
+    type: function
+    desc: Get a table with advertising information.
+          [icon:attention] function returns nil if values do not ready
+    members:
+    - name: callback
+      type: function
+      desc: |-
+            The function to call when advertising information is available. On iOS 14 and above
+            this will trigger a tracking request popup.
+
+    examples:
+    - desc: |-
+            ```lua
+            function init(self)
+                adinfo.get(function(self, info)
+                  print(info.ad_ident, info.ad_tracking_enabled)
+                end)
+            end
+            ```

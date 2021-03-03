@@ -1,0 +1,21 @@
+name: AdInfoExt
+
+platforms:
+    android:
+        context:
+            aaptExtraPackages: ['com.android.support', 'com.google.android.gms', 'com.google.android.gms.common']
+
+    armv7-ios:
+        context:
+            weakFrameworks: ['AdSupport', 'StoreKit']
+            frameworks: ['AppTrackingTransparency']
+
+    arm64-ios:
+        context:
+            weakFrameworks: ['AdSupport', 'StoreKit']
+            frameworks: ['AppTrackingTransparency']
+
+    x86_64-ios:
+        context:
+            weakFrameworks: ['AdSupport', 'StoreKit']
+            frameworks: ['AppTrackingTransparency']
