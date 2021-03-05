@@ -1,0 +1,28 @@
+[bootstrap]
+main_collection = /main/main.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 640
+height = 1136
+
+[android]
+input_method = HiddenInputField
+package = com.defold.extension.adinfo
+
+[project]
+title = extension-adinfo
+dependencies = https://github.com/andsve/dirtylarry/archive/master.zip
+
+[library]
+include_dirs = extension-adinfo
+
+[ios]
+bundle_identifier = com.defold.extension.adinfo
+
+[adinfo]
+tracking_usage_description = We would like to show you relevant ads.
+register_for_attribution = 1
+
